@@ -1,0 +1,25 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 277px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px;
+  padding-top: 10px;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+.mat-expansion-panel-header {
+  padding: 0 10px;
+}
+::ng-deep .mat-list-item.active {
+  background-color: cadetblue;
+}

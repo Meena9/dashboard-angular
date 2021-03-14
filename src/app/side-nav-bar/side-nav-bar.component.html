@@ -1,0 +1,78 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <div class="sidenav mt-3">
+      <mat-accordion multi="true" [displayMode]="displayMode">
+        <mat-expansion-panel class="no-shadow">
+          <mat-expansion-panel-header
+            fxLayout="row"
+            [expandedHeight]="expandHeight"
+            [collapsedHeight]="collapseHeight"
+          >
+            <mat-panel-title>
+              <mat-icon aria-hidden="false">folder</mat-icon>
+              Audit Management System
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-nav-list class="ml-0" dense>
+            <mat-list-item
+              class="nav-link"
+              routerLinkActive="active"
+              (click)="sidenav.toggle()"
+              routerLink="home"
+            >
+              CheckList
+            </mat-list-item>
+            <mat-list-item
+              class="nav-link"
+              routerLinkActive="active"
+              (click)="sidenav.toggle()"
+              routerLink="report"
+            >
+              Reports
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel class="no-shadow my-0">
+          <mat-expansion-panel-header
+            fxLayout="row"
+            [expandedHeight]="expandHeight"
+            [collapsedHeight]="collapseHeight"
+          >
+            <mat-panel-title>
+              <mat-icon aria-hidden="false">folder_open</mat-icon> Vendor
+              Management</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <mat-nav-list class="ml-0" dense>
+            <mat-list-item
+              class="nav-link"
+              routerLinkActive="active"
+              (click)="sidenav.toggle()"
+              routerLink="vendor-management"
+            >
+              Manage Vendor
+            </mat-list-item>
+          </mat-nav-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+      *ngIf="isHandset$ | async"
+    >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+  </mat-sidenav-content>
+</mat-sidenav-container>

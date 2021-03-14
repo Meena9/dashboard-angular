@@ -1,0 +1,13 @@
+.table-container {
+  width: 100%;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.mat-row:nth-child(even) {
+  background-color: cornsilk;
+}
+
+.mat-row:nth-child(odd) {
+  background-color: whitesmoke;
+}

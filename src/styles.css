@@ -1,0 +1,55 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+.sidenav-container,
+.sidenav {
+  background-color: white;
+  color: black;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.disabled {
+  pointer-events: none;
+  color: darkgray;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+@media (min-width: 960.98px) {
+  .container-fuild {
+    padding-left: 287px;
+    padding-right: 1rem;
+    padding-top: 10px;
+  }
+}
+
+.header {
+  margin: 1rem;
+}
+
+.title {
+  width: 100%;
+  font-size: x-large;
+  font-weight: bold;
+}
+.input-container {
+  margin: 20px;
+}
+.form-control {
+  border-radius: 10px;
+  height: 30px;
+}
+.button {
+  border-radius: 5px;
+  height: 40px;
+  padding: 0px 32px;
+}
+.inline-class {
+  display: flex;
+  justify-content: space-between;
+}
