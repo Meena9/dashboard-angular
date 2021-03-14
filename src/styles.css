@@ -22,14 +22,10 @@ body {
 }
 @media (min-width: 960.98px) {
   .container-fuild {
-    padding-left: 287px;
-    padding-right: 1rem;
+    /* padding-left: 287px; */
+    /* padding-right: 1rem; */
     padding-top: 10px;
   }
-}
-
-.header {
-  margin: 1rem;
 }
 
 .title {
@@ -47,7 +43,7 @@ body {
 .button {
   border-radius: 5px;
   height: 40px;
-  padding: 0px 32px;
+  /* padding: 0px 32px; */
 }
 .inline-class {
   display: flex;
