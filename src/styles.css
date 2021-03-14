@@ -23,7 +23,7 @@ body {
 @media (min-width: 960.98px) {
   .container-fuild {
     /* padding-left: 287px; */
-    /* padding-right: 1rem; */
+    padding-right: 1rem;
     padding-top: 10px;
   }
 }
